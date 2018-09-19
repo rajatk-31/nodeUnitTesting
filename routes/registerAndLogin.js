@@ -60,7 +60,7 @@ const login = (req, res) => {
                     success: false,
                     msg: "Please register first."
                 })
-            } else if (req.body.password == loginData.password) {
+            } else if (req.body.password != loginData.password) {
                 res.status(400).json({
                     success: false,
                     msg: "Password mismatch"
