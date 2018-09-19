@@ -2,8 +2,8 @@
 
 ## Steps to start the project
 
-Run `npm install`.  
-Run `npm start` to start server.  
-Run `npm test` to start unit testing.  
+Run **_`npm install`_**.  
+Run **_`npm start`_** to start server.  
+Run **_`npm test`_** to start unit testing.  
 
 Access [http://localhost:3001](http://localhost:3001) to serve application.
