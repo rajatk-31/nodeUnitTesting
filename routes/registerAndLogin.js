@@ -66,7 +66,7 @@ const login = (req, res) => {
                     msg: "Password mismatch"
                 })
             } else {
-                const token = jwt.sign({ name: loginData.name, email: loginData.email }, 'secret')
+                const token = jwt.sign({ name: loginData.name, email: loginData.email }, req.app.get('secret'))
                 res.status(200).json({
                     success: true,
                     msg: "User login successfull",

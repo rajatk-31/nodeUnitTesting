@@ -12,7 +12,7 @@ mongoose.connect('mongodb://localhost/unitTest', { useNewUrlParser: true }, (err
         console.log("Connected to database.")
     } else {}
 })
-
+app.set('secret', 'T35T1NG')
 app.use('/', routes)
 
 app.listen(3001, () => {
